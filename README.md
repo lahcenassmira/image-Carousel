@@ -1,2 +1,2 @@
-"# image carousel" 
-"## https://twitter.com/lahcen_assmira" 
+# image carousel
+## https://twitter.com/lahcen_assmira
