@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lahcen assmira</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <section class="wrapper">
+      <h1>LAHCEN ASSMIRA</h1>
+
+
+        <img  id="mainPhoto" src="img/6.jpg" alt="">
+        <div class="image-wrapper">
+            <img  class="imgCarousel" src="img/1.jpg" alt="">
+            <img  class="imgCarousel" src="img/2.jpg" alt="">
+            <img  class="imgCarousel" src="img/3.jpg" alt="">
+            <img  class="imgCarousel" src="img/4.jpg" alt="">
+            <img  class="imgCarousel" src="img/5.jpg" alt="">
+        
+        </div>
+    </section>
+    <script> 
+    let images = Array.from(document.
+     getElementsByClassName("imgCarousel"))
+
+  let mainPhoto= document.getElementById("mainPhoto")
+    function updateImage(event){
+        let image = event.target
+
+        mainPhoto.src = image.src
+    }   
+
+    images.forEach(function(image){
+        image.addEventListener("click", updateImage)
+    });
+
+    </script>
+   
+</body>
+</html>
